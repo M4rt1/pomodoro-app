@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+.timer{
+    box-sizing:border-box;
+    background-color: hsla(132, 100%, 2%, 0.651);
+    box-shadow: inset 0px 0px 4rem 2rem rgb(0, 0, 0),0px 0px 4rem 2rem rgba(0, 0, 0, 0.445),0px 0px 4rem  2rem rgba(0, 0, 0, 0.4);
+    padding:0 150px 150px 150px;
+    border-radius: 59%;
+}
+.timer-values{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#timer-label{
+    font-size: 6rem;
+    font-family: 'Shadows Into Light', cursive;
+    color:hsl(320, 74%, 82%);
+    -webkit-text-stroke: 1px hsl(320, 73%, 30%);
+    user-select: none;
+}
+
+#time-left{
+    font-size: 10rem;
+    color:hsl(22, 74%, 82%);
+    -webkit-text-stroke: 2px hsl(22, 73%, 30%);
+    text-shadow: 0px 0px 3rem black;
+    user-select: none;
+}
+
+.timer-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.timer-button{
+    font-size: 3rem;
+    font-family: 'Overpass', sans-serif;
+    color:hsl(0, 74%, 82%);
+    -webkit-text-stroke: 1px hsl(320, 73%, 30%);
+    margin:0px 1rem;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.0);
+    border: 0px;
+    transition:0.4s ease-out;
+    &:hover{
+        font-size: 3.5rem;
+        text-shadow: 0px 0px 0.5rem blue;
+    }
+    &:active{
+        font-size:2rem;
+        transform:rotate(45deg);
+    }
+}

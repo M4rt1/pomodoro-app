@@ -1,0 +1,84 @@
+.session-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(145, 3, 3, 0);
+  border-radius: 20%;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 2rem 2rem black;
+          box-shadow: 0px 0px 2rem 2rem black;
+  padding: 10px;
+}
+
+#session-label {
+  color: #f3afdc;
+  -webkit-text-stroke: 0.5px #84155f;
+  text-shadow: 0px 0px 20px  black;
+  font-size: 2.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.session-timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#session-length {
+  color: #f3c8af;
+  -webkit-text-stroke: 0.1px #843e15;
+  font-size: 2.3rem;
+  margin: 0px 0.2rem;
+  padding-top: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.value-buttons {
+  font-size: 2.5rem;
+  background-color: rgba(255, 0, 0, 0.014);
+  color: white;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  padding: 1px 3px;
+  cursor: pointer;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.value-buttons:hover {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=SessionLength.css.map */
