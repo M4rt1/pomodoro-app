@@ -17,7 +17,6 @@ class Timer extends React.Component {
     }
 
     playTimer() {
-
         this.setState((prevState) => {
             return {
                 shouldStop: !prevState.shouldStop
@@ -73,6 +72,17 @@ class Timer extends React.Component {
     }
 
     resetTimer() {
+        if (this.state.shouldStop === false) {
+            this.setState((prevState) => {
+                return {
+                    shouldStop: !prevState.shouldStop
+                }
+            })
+        } else {
+            this.setState({
+                shouldStop: this.state.shouldStop
+            })
+        }
         this.stopTimer();
         this.props.resetTimer();
         this.setState({
